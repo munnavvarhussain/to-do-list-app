@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-list-check"></i> To-Do List</h1>
+      <button id="toggleTheme" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <button id="addTaskBtn"><i class="fas fa-plus"></i></button>
+    </div>
+    <small id="feedback" class="hidden">Please enter a task!</small>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+      <p id="taskCount">0 tasks</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
